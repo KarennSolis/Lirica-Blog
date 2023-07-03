@@ -1,19 +1,8 @@
-/* .carousel-inner{
-    max-height: 800px;
-    max-width: 700px;
-}; */
-
 .fondo{
     background-image: url("/public/imagenesFijas/notas.PNG");
     /* background-size: cover; */
     /* background-position: center; */
 };
-
-/* .borde-carrousel{
-    border: 10px solid #00FFFF;
-    height: 100%; 
-    width: 100%; 
-}; */
 
 .img-circle{
     border-radius: 100%;

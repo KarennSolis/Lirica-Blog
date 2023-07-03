@@ -100,29 +100,6 @@ const deletePostById = async function (req, res) {
 
 
 //Editar datos//
-// const updatePostById = async function (req, res) {
-//   const postId = req.params.id;
-//   const { titulo, contenido, imagen } = req.body;
-//   if (!titulo || !contenido || !imagen || !postId) {
-//     return res.status(400).send({ result: false, message: 'Faltan datos para la actualización del post' });
-//   }
-//   try {
-//     const result = await sequelize.query('UPDATE posts SET titulo = ?, contenido = ?, imagen = ? WHERE id_post = ?', {
-//       replacements: [titulo, contenido, imagen, postId],
-//       type: sequelize.QueryTypes.UPDATE
-//     });
-//     if (result && result[0] && result[0].affectedRows === 0) {
-//       res.status(404).send({ result: false, message: 'Post no encontrado' });
-//     } else {
-//       res.status(200).send({ result: true, message: 'Post actualizado con éxito' });
-//     }
-    
-//   } catch (error) {
-//     console.log(error);
-//     res.status(500).send({ result: false, message: 'Error en el servidor' });
-//   }
-// };
-
 const updatePostById = async function (req, res) {
   const postId = req.params.id;
   const { titulo, contenido} = req.body;

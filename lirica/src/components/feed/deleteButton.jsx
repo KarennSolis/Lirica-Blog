@@ -1,26 +1,3 @@
-// export function DeleteButton({id}){
-//     const handleDelete = async () => {
-//         try{
-//             const response = await fetch(`http://localhost:3001/lirica/post/${id}`, {
-//                 method: "DELETE",
-//                 headers: {
-//                   "Content-Type": "application/json",
-//                 },
-//               });
-
-//               alert("Este post ha sido eliminado");
-//             } catch (error) {
-//               console.log(error);
-//             }
-//           };
-
-//     return(
-//         <button className="btn btn-danger bi bi-trash" onClick={()=> handleDelete(id)}>
-            
-//         </button>
-//     );
-// }
-
 import { useState } from "react";
 
 export function DeleteButton({ id }) {
