@@ -9,9 +9,8 @@ export function PostSection({ dataPosts }) {
     <section className='container justify-content-center col-6'>
       {sortedPosts.map((article) => (
         <article className=" mt-5" key={article.id_post}>
-          <div className="card mb-3 tamImg">
-            {/* <img src="/imagenesFijas/piano.jpg" className="card-img-top tamImg" alt="..." /> */}
-            <img src={article.imagen} className="card-img-top tamImg" alt="..." />
+          <div className="card mb-3">
+            <img src={article.imagen} className="card-img-top img-thumbnail" alt="..." />
             <div className="card-body">
               <h2 className="card-title">{article.titulo}</h2>
               <small className="text-body-secondary">Fecha de publicación: {article.fecha.length > 10 ? `${article.fecha.slice(0, 10)}` : article.fecha}</small>
@@ -27,5 +26,3 @@ export function PostSection({ dataPosts }) {
     </section>
   );
 }
-
-
