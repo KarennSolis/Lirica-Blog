@@ -6,4 +6,3 @@ Instalación: es necesario hacer npm i tanto en el backend como en frontend, ini
 
 Autor: Karen Alinka Solis Solano Correo:karenalinka97@gmail.com
 
-Documentación adicional: Si tu proyecto tiene documentación adicional, como una guía de usuario o una API, puedes mencionarla y proporcionar enlaces a ella.
